@@ -2,7 +2,7 @@ import Image from 'next/image'
 export default function TimeCard() {
 
     return (
-        <section className='  w-[350px] h-[160px] overflow-hidden m-2 rounded-xl '>
+        <section className='w-[350px] h-[160px] overflow-hidden m-2 rounded-xl '>
             {/* Background image */}
             <div className='bg-gradient-to-r from-cyan-500 to-blue-500 w-[inherit] h-[60px] relative'>
 
@@ -14,7 +14,7 @@ export default function TimeCard() {
                 {/* Category and options */}
                 <div className=" h-[20px] flex justify-between items-center pt-8 pb-4 px-4 ">
                     <b>Work</b>
-                    <Image src='/images/icon-ellipsis.svg' width={15} height={15}  />
+                    <Image src='/images/icon-ellipsis.svg' alt='ellipsis menu' width={15} height={15} />
                 </div>
                 {/* Time - now and last week */}
                 <div className="flex justify-between items-center px-4 ">

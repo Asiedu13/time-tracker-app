@@ -1,3 +1,4 @@
+import ProfileCard from '../components/ProfileCard'
 import TimeCard from '../components/TimeCard'
 import { Inter } from 'next/font/google'
 
@@ -10,10 +11,10 @@ export default function Home() {
 
         {/* Profile */}
         <section>
-
+          <ProfileCard />
         </section>
         {/* Personal time track */}
-        <section className='w-[50vw] h-[50vh] flex flex-col justify-center items-center border-200-white border-2 border-solid'>
+        <section className='w-[fit-content] h-[50vh] flex flex-col justify-center items-center'>
           <TimeCard />
           <TimeCard />
         </section>

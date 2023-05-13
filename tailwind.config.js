@@ -15,7 +15,6 @@ module.exports = {
           'study-img': "url('/images/icon-study.svg')",
           'play-img': "url('/images/icon-play.svg')",
           'social-img': "url('/images/icon-social.svg')",
-          'ellipses': "url('images/icon-ellipsis.svg')",
       },
     },
   },
