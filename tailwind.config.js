@@ -11,6 +11,11 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          'work-img': "url('/images/icon-work.svg')",
+          'study-img': "url('/images/icon-study.svg')",
+          'play-img': "url('/images/icon-play.svg')",
+          'social-img': "url('/images/icon-social.svg')",
+          'ellipses': "url('images/icon-ellipsis.svg')",
       },
     },
   },
