@@ -1,7 +1,7 @@
 import Image from 'next/image'
 export default function ProfileCard() {
     return (
-        <section className='bg-[#1D204B] w-[350px] h-[180px] overflow-hidden m-2 rounded-xl'>
+        <section className='bg-[#1D204B] w-[360px] h-[180px] overflow-hidden m-2 rounded-xl'>
             {/* User details */}
             <section className='flex items-center bg-[#5746EA] w-[inherit] h-[70%] p-4'>
                 {/* User Image */}

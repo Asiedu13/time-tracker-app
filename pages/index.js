@@ -1,13 +1,15 @@
 import ProfileCard from '../components/ProfileCard'
 import TimeCard from '../components/TimeCard'
-import { Inter } from 'next/font/google'
+import { Rubik } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-
+// const inter = Rubik()
+const rubik = Rubik( {
+  subsets: ['latin']
+})
 export default function Home() {
   return (
-    <main className=' w-[100vw] h-[100vh]  overflow-hidden flex justify-center items-center'>
-       <div>
+    <main className={` w-[100vw] h-[100vh]  overflow-hidden flex justify-center items-center`}>
+       <div className={rubik.className}>
 
         {/* Profile */}
         <section>

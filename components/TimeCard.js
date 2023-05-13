@@ -2,7 +2,7 @@ import Image from 'next/image'
 export default function TimeCard() {
 
     return (
-        <section className='w-[350px] h-[160px] overflow-hidden m-2 rounded-xl '>
+        <section className='w-[360px] h-[160px] overflow-hidden m-2 rounded-xl '>
             {/* Background image */}
             <div className='bg-gradient-to-r from-cyan-500 to-blue-500 w-[inherit] h-[60px] relative'>
 
