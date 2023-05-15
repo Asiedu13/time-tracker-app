@@ -1,20 +1,35 @@
+import {useState, useEffect} from 'react'
+import ProfileCard from '../components/ProfileCard'
 import TimeCard from '../components/TimeCard'
-import { Inter } from 'next/font/google'
+import { Rubik } from 'next/font/google'
+import jsonData from '../data.json' assert {type: 'json'}
 
-const inter = Inter({ subsets: ['latin'] })
-
+console.log(jsonData)
+const rubik = Rubik( {
+  subsets: ['latin']
+})
 export default function Home() {
+  const [userData, setUserData] = useState([]);
+
+  useEffect(()=> {
+    setUserData(jsonData)
+  }, [jsonData])
+
   return (
-    <main className='flex justify-center items-center'>
-       <div>
+    <main className={` w-[100vw] h-[100vh] flex justify-center items-center`}>
+       <div className={rubik.className}>
 
         {/* Profile */}
         <section>
-
+          <ProfileCard />
         </section>
         {/* Personal time track */}
-        <section className='w-[300px] h-[100px] border-200-white border-2 border-solid'>
-          <TimeCard />
+        <section className='w-[fit-content] h-[50vh] flex flex-col justify-center items-center relative overflow-x-auto'>
+          <div>
+
+          {userData.map(dat => <TimeCard timestamp={dat} key={Math.random()} />
+          )}
+          </div>
         </section>
        </div>
     </main>
