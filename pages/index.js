@@ -24,8 +24,8 @@ export default function Home() {
           <ProfileCard />
         </section>
         {/* Personal time track */}
-        <section className='w-[fit-content] h-[50vh] flex flex-col justify-center items-center relative overflow-x-auto'>
-          <div>
+        <section className='w-[fit-content] h-[50vh] flex flex-col justify-center items-center relative '>
+          <div className='w-[fit-content] h-[50vh] overflow-x-auto'>
 
           {userData.map(dat => <TimeCard timestamp={dat} key={Math.random()} />
           )}

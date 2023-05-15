@@ -15,7 +15,7 @@ module.exports = {
         'social-img': "url('/images/icon-social.svg')",
         'play-img': "url('/images/icon-play.svg')",
         'exercise-img': "url('/images/icon-exercise.svg')",
-        'self care': "url('/images/icon-self-care.svg')",
+        'self-care-img': "url('/images/icon-self-care.svg')",
       },
     },
   },
