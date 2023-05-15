@@ -7,7 +7,7 @@ export default function TimeCard({timestamp}) {
         'play': "#56C2E6",
         'social': '#7235D1',
         'work': '#FF8B64',
-        'self care': '#F1C75B',
+        'self-care': '#F1C75B',
     }
     console.log(`bg-[${varyingColors[imgToShow]}]`)
     return (
